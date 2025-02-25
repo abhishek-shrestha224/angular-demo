@@ -6,6 +6,7 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+// flex fix clean red kkkllllggh
 export class AppComponent {
   count = 0;
 
