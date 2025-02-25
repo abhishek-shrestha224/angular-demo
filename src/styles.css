@@ -1,1 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
+
+
+@theme{
+  --font-title: Josefin Sans, sans-serif;
+  --font-body: Quicksand, serif;
+}
+
+body{
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-weight: 500;
+}
