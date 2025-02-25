@@ -9,7 +9,15 @@ import {Component} from '@angular/core';
 export class InputValueComponent {
   val = "";
 
-  getVal(event: Event) {
+  read(event: Event) {
     this.val = (event.target as HTMLInputElement).value;
+  }
+
+  get(a: string) {
+    console.log(a);
+  }
+
+  set() {
+    this.val = "pineapple"
   }
 }

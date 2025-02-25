@@ -1,6 +1,13 @@
 <h1>Get and Set Input Values</h1>
-<input type="text" placeholder="Enter some value" (input)="getVal($event)"/>
+<input type="text" placeholder="Enter some value" value="{{val}}" (input)="read($event)" #foo/>
 <br/>
 <br/>
 <p>{{ val }}</p>
 
+<button (click)="get(foo.value)">Get Value</button>
+
+<br/>
+<br/>
+
+
+<button (click)="set()">Set Value</button>
