@@ -1,24 +1,12 @@
 import {Component} from '@angular/core';
+import {CounterAppComponent} from './counter-app/counter-app.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [CounterAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-// flex fix clean red kkkllllggh
 export class AppComponent {
-  count = 0;
 
-  handleIncrement() {
-    this.count++;
-  }
-
-  handleDecrement() {
-    this.count--;
-  }
-
-  handleReset() {
-    this.count = 0;
-  }
 }
