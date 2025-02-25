@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-input-value',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './input-value.component.css'
 })
 export class InputValueComponent {
+  val = "";
 
+  getVal(event: Event) {
+    this.val = (event.target as HTMLInputElement).value;
+  }
 }
